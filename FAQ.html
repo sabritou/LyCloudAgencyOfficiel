@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <title>LyCloud Agency</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+
+  <link rel="stylesheet" href="css home/reset.css">
+  <link rel="stylesheet" href="css home/menu.css">
+  <link rel="stylesheet" href="css home/imgintro.css">
+  <link rel="stylesheet" href="css home/footer.css">
+  <link rel="stylesheet" href="css home/cardshome.css">
+  <link rel="stylesheet" href="css home/imgvideo.css">
+  <link rel="stylesheet" href="css home/support.css">
+  <link rel="stylesheet" href="css home/socialmedia.css">
+  <link rel="stylesheet" href="css home/faq.css">
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <nav class="menu filter">
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="web.html"><img src="img/shop.png" class="icon"></img>Web</a></li>
+      <li><a href="marketing.html"><img src="img/shop.png" class="icon"></img>Marketing</a></li>
+      <li><a href="à propos.html">À Propos</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="FAQ.html">FAQ</a></li>
+    </ul>
+  </nav>
+
+<center>
+<div class="faqtitle">
+    <h2>Cliquer sur les questions</h2>
+    <h1>FAQ : LyCloud Agency</h1>
+</div> 
+</center>     
+      
+      
+    
+ 
+
+ 
+
+
+        <style>
+            .layout{
+                width: 600px;
+                margin: auto;
+            }
+            .faq{
+                padding: 10px;
+                margin-top: 2rem;
+                margin-bottom: 10px;
+                background: rgb(74, 74, 74);
+                border-radius: 10px;
+            }
+            .question p{
+                margin: 5px;
+                padding: 0;
+                font-size: 25px;
+            }
+            .answer p{
+                margin: 5px;
+                font-family: "Ubuntu", sans-serif;
+                padding: 10px;
+                font-size: 20px;
+                color: rgb(3, 3, 3);
+                background: rgb(229, 229, 229);
+                border-radius: 10px; 
+                line-height: 140%;
+            }
+            .faq:hover{
+                cursor: pointer;
+            }
+            .answer {
+                display: none;
+            } 
+            .faq.active .answer {
+                display: block;
+            }
+        </style>
+    
+    <div class="support">
+        <div class="layout">
+          
+          
+          <div class="faq">
+
+
+            <div class="question">
+                <p> Qu'est-ce que LyCloud Agency ?</p>
+
+            </div>
+            <div class="answer">
+                <p>
+                  LyCloud Agency est une entreprise spécialisée dans le développement web et le marketing numérique. 
+                  Nous proposons des services sur mesure pour aider nos clients à atteindre leurs objectifs en ligne.
+                </p>
+
+            </div>
+        </div>
+            <div class="faq">
+
+
+                <div class="question">
+                    <p>Quels services proposez-vous ?</p>
+    
+                </div>
+                <div class="answer">
+                    <p>
+                      Nous offrons une gamme complète de services, 
+                      comprenant le développement de sites web, la gestion des réseaux sociaux, la publicité en ligne, 
+                      le marketing par e-mail, et bien plus encore.
+                    </p>
+    
+                </div>
+            </div>
+
+            <div class="faq">
+                <div class="question">
+                    <p> Comment puis-je contacter LyCloud Agency ?</p>
+    
+                </div>
+                <div class="answer">
+                    <p>
+                      Vous pouvez nous contacter via notre site web en remplissant le formulaire de contact, ou en nous envoyant un e-mail à [contact.lycloud@gmail.com]. 
+                      Nous sommes également présents sur les réseaux sociaux, 
+                      alors n'hésitez pas à nous suivre et à nous envoyer un message.
+                    </p>
+    
+                </div>
+            </div>
+     
+
+        <div class="faq">
+          <div class="question">
+              <p> Comment fonctionne le processus de travail chez LyCloud Agency ?</p>
+
+          </div>
+          <div class="answer">
+              <p>
+                Nous commençons par une consultation approfondie pour comprendre les besoins et les objectifs de nos clients. Ensuite, nous élaborons une stratégie sur mesure et mettons en œuvre les solutions convenues. Nous maintenons une communication ouverte tout au long du processus pour assurer la satisfaction du client.
+              </p>
+
+          </div>
+      </div>
+  
+
+  <div class="faq">
+    <div class="question">
+        <p> Quels sont vos tarifs ?</p>
+
+    </div>
+    <div class="answer">
+        <p>
+          Nos tarifs varient en fonction de la portée et de la complexité du projet. Nous proposons des solutions adaptées à différents budgets et nous sommes transparents sur nos tarifs dès le départ. Nous offrons également des devis gratuits pour tous nos services.
+        </p>
+
+    </div>
+</div>
+</div>
+
+
+<div class="faq">
+  <div class="question">
+      <p> Quels sont les délais typiques pour la réalisation d'un projet ?</p>
+
+  </div>
+  <div class="answer">
+      <p>
+        Les délais varient en fonction de la taille et de la complexité du projet, ainsi que des exigences spécifiques du client. Nous travaillons en étroite collaboration avec nos clients pour établir des calendriers réalistes et respecter les délais convenus.
+      </p>
+   
+   
+    </div>
+  </div>
+  </div>
+  
+
+    
+        <script>
+            let answers=document.querySelectorAll(".faq");
+            answers.forEach((event)=>{
+                event.addEventListener('click',()=>{
+                    if(event.classList.contains("active")){
+                        event.classList.remove("active");
+                    }
+                    else{
+                        event.classList.add("active");
+                    }
+                })
+            })
+        </script>
+  
+    
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <footer>
+    <hr>
+    <div class="basdepage">
+      <div class="footer-dark">
+        <div class="liens">
+          <h3>Services</h3>
+          <ul>
+            <li><a href="web.html">Web</a></li>
+            <li><a href="marketing.html">Marketing</a></li>
+            <li><a href="à propos.html">à propos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="FAQ.html">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="liens">
+          <h3>About</h3>
+          <ul>
+            <li><a href="#">CGU</a></li>
+            <li><a href="#">CGV</a></li>
+            <li><a href="#">Teams</a></li>
+          </ul>
+        </div>
+        <div class="footertext">
+          <h3>LyCloud Agency</h3>
+          <p>LyCloud Agency est une agence spécialisée dans le développement web et le marketing numérique. Nous proposons des services complets pour la création et la gestion de sites web, ainsi que des stratégies de marketing digital sur mesure pour accroître la visibilité en ligne, générer du trafic qualifié et améliorer la conversion. Avec une approche axée sur l'innovation et la performance, nous aidons nos clients à atteindre leurs objectifs commerciaux et à se démarquer dans un environnement numérique en constante évolution.</p>
+        </div>
+        <p class="copyright">LyCloud Agency @2024</p>
+      </div>
+  </footer>
+
+
+
+
+</body>
+
+</html>
