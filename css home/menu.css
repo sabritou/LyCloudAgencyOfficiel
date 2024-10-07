@@ -102,6 +102,8 @@ body {
     margin-top: 1rem;
     position: sticky;
     top: 20px;
+
+
 }
 
 .menu li {
@@ -129,7 +131,7 @@ body {
     backdrop-filter: blur(5rem);
     width: 100%;
     margin-top: 5rem;
-    box-shadow: 1px 1px 20px #959595;
+    box-shadow: 1px 1px 20px #ffffff;
     background-color: #ffffff;
 }
 
