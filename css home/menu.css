@@ -8,29 +8,37 @@ body {
 .titre {
     text-align: center;
     color: #ffffff;
-    font-size: 6rem;
-    margin-top: 5rem;
-    margin-bottom: 13rem;
+    font-size: 13rem;
+    margin-top: 10rem;
+    margin-bottom: 1rem;
 }
 
-.planet:before {
-	content: "";
-	display: block;
-	position: fixed;
-	width: 1260px;
-    aspect-ratio: 1;
-	left: 50%;
-	top: 50%;
-	z-index: -1;
-  transform: translateX(-50%) translateY(-50%);
-	background-image: radial-gradient(at 50% 50% in oklch,
-			color-mix(in oklch, skyblue, blue 80%),
-			color-mix(in oklch, skyblue, blue 10%) 19%,
-			color-mix(in oklch, rgb(255, 255, 255), rgb(255, 255, 255) 20%) 20%,
-			color-mix(in oklch, rgb(255, 255, 255), blue 80%),
-			color-mix(in oklch, rgb(0, 0, 0), black 50%) 55%,
-			transparent 70%);
-}
+
+
+
+.video-container {
+    position: fixed; /* Fixe pour qu'elle reste toujours en arrière-plan */
+    top: 0;
+    left: 0;
+    width: 100vw; /* Pleine largeur */
+    height: 100vh; /* Pleine hauteur */
+    overflow: hidden; /* Coupe tout débordement */
+    z-index: -1; /* Place la vidéo derrière le contenu */
+  }
+
+  /* Style de la vidéo */
+  video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centre la vidéo */
+    width: 100%; /* Ajuste à la largeur de l'écran */
+    height: auto; /* Maintient les proportions */
+  }
+
+
+
+
 
 .cloud {
     background-color: #fff;
