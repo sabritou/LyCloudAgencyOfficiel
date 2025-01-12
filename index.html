@@ -1,76 +1,77 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="refresh" content="0; url=home.html">
-    
+
+
+
+  <div class="video">
+    <video autoplay muted loop>
+      <source src="img/cube.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <style>
+    body, html {
+  
+      
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, sans-serif;
+    }
+
+    body{
+      background-color: black;
+    }
+
+  .video {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100vw; 
+    height: 100vh; 
+    overflow: hidden;
+    z-index: -1; 
+  }
+
+ 
+  video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    width: 100%;
+    height: auto; 
+
+    width: 70vw;
+max-width: 700px;
+margin-bottom: 60px;
+  }
+
+  
+
+    .message {
+        margin-top: 35rem;
+        text-align: center;
+        font-size: 1.2em;
+        color: #ffffff;
+    }
+</style>
+
 </head>
 <body>
-    <a href="home.html"></a>
-    <style>
-        body, html {
-            height: 100%;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #923b8d;
-            font-family: Arial, sans-serif;
-        }
+<div class="content">
+    <div class="loader"></div>
+    <div class="message">En cours ...</div>
+</div>
 
-    
-.loader {
-  position: relative;
-  width: 110px;
-  height: 30px;
-  background: #fff;
-  border-radius: 100px;
-}
+<script>
+    // Rediriger après un délai de 5 secondes
+    setTimeout(function() {
+        window.location.href = "home.html";
+    }, 1000);
+</script>
 
-.loader::before {
-  content: '';
-  position: absolute;
-  top: -20px;
-  left: 10px;
-  width: 30px;
-  height: 30px;
-  background: #fff;
-  border-radius: 50%;
-  box-shadow: 40px 0 0 20px #fff;
-}
 
-@keyframes snowing {
-  0% {
-    transform: translateY(0px);
-  }
-
-  70% {
-    transform: translateY(100px) scale(1);
-  }
-
-  100% {
-    transform: translateY(100px) scale(0);
-  }
-}
- .message {
-            margin-top: 20px;
-            text-align: center;
-            font-size: 1.2em;
-            color: #ffffff;
-        }
-    </style>
-</head>
-<body>
-    
-    <div class="content">
-        <div class="loader"></div>
-        <div class="message">En cours...</div>
-    </div>
-
-    <script>
-        // Rediriger après un délai / secondes
-        setTimeout(function(){
-            window.location.href = "home.html";
-        }, 1000 ,);
-    </script>
 </body>
 </html>

@@ -17,23 +17,23 @@ body {
 
 
 .video-container {
-    position: fixed; /* Fixe pour qu'elle reste toujours en arrière-plan */
+    position: fixed;
     top: 0;
     left: 0;
-    width: 100vw; /* Pleine largeur */
-    height: 100vh; /* Pleine hauteur */
-    overflow: hidden; /* Coupe tout débordement */
-    z-index: -1; /* Place la vidéo derrière le contenu */
+    width: 100vw;
+    height: 100vh; 
+    overflow: hidden; 
+    z-index: -1;
   }
 
-  /* Style de la vidéo */
+ 
   video {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Centre la vidéo */
-    width: 100%; /* Ajuste à la largeur de l'écran */
-    height: auto; /* Maintient les proportions */
+    transform: translate(-50%, -50%); 
+    width: 100%;
+    height: auto;
   }
 
 

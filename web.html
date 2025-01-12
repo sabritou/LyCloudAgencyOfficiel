@@ -50,74 +50,192 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="cardshome">
-  <div class="container">
-
-    <div class="box une img1">
-      <img src="img/logoly.png"  width="100%"  height="auto">
-    </div>
-
-    <div class="box deux"> 
-      <h1>Pourquoi nous choisir ? </h1>
-<hr>
-
-      <p>Nous comprenons que chaque entreprise a des besoins uniques. C'est pourquoi nous travaillons en étroite collaboration avec vous pour comprendre vos objectifs, vos défis et vos aspirations, afin de créer des solutions sur mesure qui répondent parfaitement à vos besoins.</p>
-
-      <p>Chez LyCloud Agency, la satisfaction du client est notre priorité absolue. Nous nous engageons à fournir un service exceptionnel à chaque étape de notre collaboration, en veillant à ce que vos attentes soient non seulement satisfaites, mais dépassées.</p>
-
-      <p>Nous croyons en une communication ouverte et transparente avec nos clients. Vous serez toujours informé de l'avancement de votre projet, des défis éventuels et des solutions envisagées, afin que vous puissiez prendre des décisions éclairées à chaque étape du processus.</p>
-
-     <p>En choisissant LyCloud Agency, vous optez pour un partenaire fiable, compétent et orienté vers les résultats, capable de transformer vos objectifs commerciaux en réalité numérique.</p>
-  
-
-    </div>
-
+  <style>
     
+    body {
+        background-color: rgb(15, 15, 15);
+        color: #fff;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        padding: 2rem;
+    }
 
+    h1 {
+        text-align: center;
+        font-size: 2.4rem;
+        margin-bottom: 2rem;
+        color: #fff;
+    }
 
-   
+    .container {
+        margin-left: 15rem;
+        display: fixed;
+        gap: 10rem;
+    }
 
-    <div class="box cinq vid">
-      <video width="100%"  height="auto" controls>
-        <source src="img/LyCloud.mp4" type="video/mp4">
-      </video>
+    .support {
+        background-color: rgb(28, 28, 28);
+        border-radius: 1.5rem;
+        box-shadow: 0px 0px 0px 2px rgb(151, 138, 248), 8px 8px 0px 0px rgb(30, 78, 254);
+        padding: 2rem;
+        width: 30%;
+        min-width: 280px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .support:hover {
+        transform: translateY(-10px);
+        box-shadow: 0px 0px 20px rgba(151, 138, 248, 0.7), 8px 8px 20px rgb(30, 78, 254);
+    }
+
+    h2 {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+        color: rgb(200, 200, 255);
+        text-align: center;
+    }
+
+    p {
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    form label {
+        font-size: 1rem;
+        color: #ccc;
+    }
+
+    form input,
+    form select {
+        padding: 0.8rem;
+        font-size: 1rem;
+        border: none;
+        border-radius: 0.8rem;
+        background-color: rgb(40, 40, 40);
+        color: white;
+        outline: none;
+    }
+
+    form input::placeholder {
+        color: #aaa;
+    }
+
+    form button {
+        background-color: rgb(30, 78, 254);
+        color: white;
+        border: none;
+        padding: 0.8rem;
+        font-size: 1rem;
+        border-radius: 0.8rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    form button:hover {
+        background-color: rgb(151, 138, 248);
+    }
+
+    .button {
+        background-color: transparent;
+        color: white;
+        border: 1px solid rgb(151, 138, 248);
+        border-radius: 0.8rem;
+        padding: 0.8rem;
+        font-size: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .button:hover {
+        background-color: rgb(151, 138, 248);
+        transform: translateY(-5px);
+    }
+
+    .button svg {
+        margin-left: 0.5rem;
+        transition: transform 0.3s ease;
+    }
+
+    .button:hover svg {
+        transform: translateX(5px);
+    }
+
+    @media (max-width: 768px) {
+        .support {
+            width: 100%;
+        }
+    }
+</style>
+</head>
+<body>
+<h1>LyCloud Agency</h1>
+<div class="container">
+    <!-- Section 1 -->
+    <div class="support">
+        <h2>Devis pour Hébergement</h2>
+        <p>Obtenez un devis personnalisé pour héberger votre site web.</p>
+        <form>
+            <label for="site-type">Type de site :</label>
+            <select id="site-type">
+                <option value="vitrine">Site Vitrine</option>
+                <option value="ecommerce">E-commerce</option>
+                <option value="autre">Autre</option>
+            </select>
+            <label for="traffic">Trafic mensuel estimé :</label>
+            <input type="number" id="traffic" placeholder="ex : 10,000 visites">
+            <button type="submit">Obtenir un devis</button>
+        </form>
     </div>
 
-
-    <div class="box cinq"> 
-      <h1>Service Web de LyCloud Agency</h1>
-<hr>
-
-<p>Création et Développement de Sites Web : Nous concevons des sites web personnalisés et professionnels, adaptés à vos objectifs et à votre identité de marque. Que vous ayez besoin d’un site vitrine, e-commerce ou d’une plateforme sur mesure, nous réalisons un site à la hauteur de vos attentes.</p>
-<p>Responsive Design : Nous assurons que votre site soit accessible et fonctionnel sur tous les appareils, qu’il s’agisse d’un ordinateur, d’une tablette ou d’un smartphone. La compatibilité mobile est primordiale dans nos conceptions.</p>
-<p>Optimisation des Performances : Nous nous assurons que votre site web soit rapide et efficace, offrant une expérience utilisateur fluide. Cela inclut l’optimisation du temps de chargement, des fonctionnalités et de la navigation.</p>
-<p>Chez LyCloud Agency, nous créons des sites web sur mesure, parfaitement adaptés aux besoins de chaque client. Du design UX/UI moderne à une architecture robuste, nous nous engageons à concevoir des plateformes intuitives, performantes et sécurisées. Chaque site est pensé pour offrir une expérience utilisateur fluide, quel que soit l’appareil utilisé, grâce à notre expertise en responsive design. Que ce soit un site vitrine ou une boutique en ligne, nous développons des solutions sur mesure pour vous aider à atteindre vos objectifs en ligne.</p>
+    <!-- Section 2 -->
+    <div class="support">
+        <h2>Abonnement Bots Discord</h2>
+        <p>Choisissez le plan idéal pour vos bots Discord.</p>
+        <div class="button">
+            Plan Basique - 2€/mois
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+        </div>
+        <div class="button">
+            Plan Standard - 5€/mois
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+        </div>
+        <div class="button">
+            Plan Premium - 10€/mois
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+        </div>
     </div>
 
-
-    <div class="box cinq vid">
-      <img src="img/lycloudagency.png"  width="100%"  height="auto"">
+    <!-- Section 3 -->
+    <div class="support">
+        <h2>Devis pour Création de Site</h2>
+        <p>Demandez un devis pour la création d'un site web sur mesure.</p>
+        <form>
+            <label for="site-name">Nom de l'entreprise :</label>
+            <input type="text" id="site-name" placeholder="Nom de votre entreprise">
+            <label for="features">Fonctionnalités souhaitées :</label>
+            <input type="text" id="features" placeholder="e.g., Blog, Boutique">
+            <label for="budget">Budget :</label>
+            <input type="number" id="budget" placeholder="e.g., 1000€">
+            <button type="submit">Demander un devis</button>
+        </form>
     </div>
-
 </div>
-
-
-
-
-
 
 
 
