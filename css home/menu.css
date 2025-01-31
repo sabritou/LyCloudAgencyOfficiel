@@ -1,7 +1,7 @@
 
 
 body {
-    background-color: black;
+    background-color: #0f0f0f;
     color: #ffffff;
 }
 
@@ -86,10 +86,10 @@ body {
 
 
 .menu a {
-    /* tous les liens a à l'intérieur de la balise nav */
+    
 
     text-decoration: none;
-    /* pas d'héritage avec effet souligné */
+    
     color: #0e0d0d;
     /* couleur du texte */
     line-height: 50px;
@@ -108,7 +108,6 @@ body {
     flex-wrap: nowrap;
     justify-content: center;
     margin-top: 1rem;
-    position: sticky;
     top: 20px;
 
 
@@ -181,4 +180,10 @@ button {
     transform: translateY(10px);
     transition: 100ms;
   }
+  
+
+
+
+  
+  
   

@@ -49,197 +49,151 @@
   </nav>
 
 
-
-  <style>
+<br><br>
+      <title>LyCloud Boutique</title>
     
-    body {
-        background-color: rgb(15, 15, 15);
-        color: #fff;
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-        padding: 2rem;
-    }
+      <style>
+          body {
+              background-color: #0f0f0f;
+              color: #fff;
+              font-family: 'Montserrat', sans-serif;
+              line-height: 1.6;
+              text-align: center;
+              margin: 0;
+              padding: 0;
+          }
+          header {
+              background-color: #1c1c1c;
+              padding: 1.5rem 0;
+              box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+          }
+          .conteneur {
+              display: flex;
+              justify-content: center;
+              gap: 2rem;
+              max-width: 1200px;
+              margin: auto;
+              padding: 2rem;
+          }
+          .carte {
+              background-color: rgb(28, 28, 28);
+              border-radius: 1.5rem;
+              box-shadow: 0px 4px 10px rgba(151, 138, 248, 0.2);
+              padding: 2rem;
+              width: 30%;
+              min-width: 280px;
+              transition: transform 0.3s ease, box-shadow 0.3s ease;
+          }
+          .carte:hover {
+              transform: translateY(-5px);
+              box-shadow: 0px 6px 12px rgba(151, 138, 248, 0.3);
+          }
+          .bouton {
+              background: linear-gradient(135deg, #994ece, rgb(145, 133, 236));
+              color: rgb(255, 255, 255);
+              border: none;
+              padding: 1rem;
+              font-size: 1rem;
+              border-radius: 0.8rem;
+              cursor: pointer;
+              transition: all 0.3s ease;
+              width: 100%;
+              font-weight: 600;
+          }
+          .bouton:hover {
+              background: #7361F9;
+              transform: scale(1.05);
+          }
+          .conteneur-panier {
+              position: fixed;
+              top: 20px;
+              right: 20px;
+              cursor: pointer;
+              font-size: 2rem;
+          }
+          #panier {
+              display: none;
+              position: fixed;
+              top: 80px;
+              right: 20px;
+              background-color: rgba(28, 28, 28, 0.95);
+              padding: 1rem;
+              border-radius: 1rem;
+              width: 300px;
+              box-shadow: 0 4px 10px rgba(151, 138, 248, 0.3);
+          }
+      </style>
+  
+          <h1>LyCloud Boutique</h1>
+          
+      </header>
+      <div class="conteneur">
 
-    h1 {
-        text-align: center;
-        font-size: 2.4rem;
-        margin-bottom: 2rem;
-        color: #fff;
-    }
 
-    .container {
-        margin-left: 15rem;
-        display: fixed;
-        gap: 10rem;
-    }
+          <div class="carte">
+            <u><h2>Hébergement Web</h2></u>
+            <p></p>
+            <br>
 
-    .support {
-        background-color: rgb(28, 28, 28);
-        border-radius: 1.5rem;
-        box-shadow: 0px 0px 0px 2px rgb(151, 138, 248), 8px 8px 0px 0px rgb(30, 78, 254);
-        padding: 2rem;
-        width: 30%;
-        min-width: 280px;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
 
-    .support:hover {
-        transform: translateY(-10px);
-        box-shadow: 0px 0px 20px rgba(151, 138, 248, 0.7), 8px 8px 20px rgb(30, 78, 254);
-    }
 
-    h2 {
-        font-size: 1.8rem;
-        margin-bottom: 1rem;
-        color: rgb(200, 200, 255);
-        text-align: center;
-    }
+  <a href="https://buy.stripe.com/00g03M2a5ccD4nefZ6">     
+<button class="bouton">Souscrire - 50€/mois</button></a>    
+<p>Hébergement performant avec support 24/7, sauvegardes automatiques et certificat SSL inclus.<br><br> Protection DDoS, firewall, monitoring en temps réel
+    interface intuitive, mises à jour automatiques</p>
+          </div>
+         
+          <div class="carte">
+              <u><h2>Création de Site</h2></u>
+              <p>Demandez un devis personnalisé.</p>
+              <a href="contact.html">
+                <button class="bouton">Devis</button>
+             </a>
+             <p>Pour toute demande de devis, veuillez fournir une description détaillée de votre projet afin que nous puissions vous proposer la solution la plus adaptée.</p>
+          </div>
+      </div>
 
-    p {
-        font-size: 1.2rem;
-        margin-bottom: 1.5rem;
-        text-align: center;
-    }
+<hr>
+<h1>Bot discord</h1>
+<div class="conteneur">
+<div class="carte">
+    <h2>Basic</h2>
+    <p>L'offre idéale pour commencer dans de bonnes conditions.</p>
+    <button class="bouton" onclick="ajouterAuPanier('Plan Basique', 2)">Basique - 2€</button>
+    <p>1gb RAM  <br>
+        1 Base de donné  <br>
+        1gb Stockage  <br>
+        1.5 vCore</p>
+</div>
 
-    form {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-    }
+<div class="carte">
+    <h2>Pro</h2>
+    <p>L'offre idéale pour les plus gros projet.</p>
+    
+    <button class="bouton" onclick="ajouterAuPanier('Plan Standard', 5)">Standard - 5€</button>
+  <p>2,5gb RAM
+    <br>
+    2 Base de donné  <br>
+    5gb Stockage  <br>
+    2.5vCore</p>
+</div>
 
-    form label {
-        font-size: 1rem;
-        color: #ccc;
-    }
-
-    form input,
-    form select {
-        padding: 0.8rem;
-        font-size: 1rem;
-        border: none;
-        border-radius: 0.8rem;
-        background-color: rgb(40, 40, 40);
-        color: white;
-        outline: none;
-    }
-
-    form input::placeholder {
-        color: #aaa;
-    }
-
-    form button {
-        background-color: rgb(30, 78, 254);
-        color: white;
-        border: none;
-        padding: 0.8rem;
-        font-size: 1rem;
-        border-radius: 0.8rem;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-    }
-
-    form button:hover {
-        background-color: rgb(151, 138, 248);
-    }
-
-    .button {
-        background-color: transparent;
-        color: white;
-        border: 1px solid rgb(151, 138, 248);
-        border-radius: 0.8rem;
-        padding: 0.8rem;
-        font-size: 1rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        transition: background-color 0.3s ease, transform 0.3s ease;
-    }
-
-    .button:hover {
-        background-color: rgb(151, 138, 248);
-        transform: translateY(-5px);
-    }
-
-    .button svg {
-        margin-left: 0.5rem;
-        transition: transform 0.3s ease;
-    }
-
-    .button:hover svg {
-        transform: translateX(5px);
-    }
-
-    @media (max-width: 768px) {
-        .support {
-            width: 100%;
-        }
-    }
-</style>
-</head>
-<body>
-<h1>LyCloud Agency</h1>
-<div class="container">
-    <!-- Section 1 -->
-    <div class="support">
-        <h2>Devis pour Hébergement</h2>
-        <p>Obtenez un devis personnalisé pour héberger votre site web.</p>
-        <form>
-            <label for="site-type">Type de site :</label>
-            <select id="site-type">
-                <option value="vitrine">Site Vitrine</option>
-                <option value="ecommerce">E-commerce</option>
-                <option value="autre">Autre</option>
-            </select>
-            <label for="traffic">Trafic mensuel estimé :</label>
-            <input type="number" id="traffic" placeholder="ex : 10,000 visites">
-            <button type="submit">Obtenir un devis</button>
-        </form>
-    </div>
-
-    <!-- Section 2 -->
-    <div class="support">
-        <h2>Abonnement Bots Discord</h2>
-        <p>Choisissez le plan idéal pour vos bots Discord.</p>
-        <div class="button">
-            Plan Basique - 2€/mois
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-            </svg>
-        </div>
-        <div class="button">
-            Plan Standard - 5€/mois
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-            </svg>
-        </div>
-        <div class="button">
-            Plan Premium - 10€/mois
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-            </svg>
-        </div>
-    </div>
-
-    <!-- Section 3 -->
-    <div class="support">
-        <h2>Devis pour Création de Site</h2>
-        <p>Demandez un devis pour la création d'un site web sur mesure.</p>
-        <form>
-            <label for="site-name">Nom de l'entreprise :</label>
-            <input type="text" id="site-name" placeholder="Nom de votre entreprise">
-            <label for="features">Fonctionnalités souhaitées :</label>
-            <input type="text" id="features" placeholder="e.g., Blog, Boutique">
-            <label for="budget">Budget :</label>
-            <input type="number" id="budget" placeholder="e.g., 1000€">
-            <button type="submit">Demander un devis</button>
-        </form>
-    </div>
+<div class="carte">
+    <h2>Prenium</h2>
+    <p>L'offre idéale pour les bots les plus gourmand.</p>
+   
+    <button class="bouton" onclick="ajouterAuPanier('Plan Premium', 10)">Premium - 10€</button>
+    <p>5gb RAM  <br>
+        4 Base de donné  <br>
+        20gb Stockage  <br>
+        4vCore</p>
+</div>
 </div>
 
 
+      
 
-
+  
 
 
 
@@ -271,8 +225,9 @@
         <div class="liens">
           <h3>About</h3>
           <ul>
-            <li><a href="#">CGU</a></li>
-            <li><a href="#">CGV</a></li>
+            <li><a href="mentionslegales.html">Mentions légales</a></li>
+            <li><a href="cgu.html">CGU</a></li>
+            <li><a href="cgv.html">CGV</a></li>
             <li><a href="#">Teams</a></li>
           </ul>
         </div>
